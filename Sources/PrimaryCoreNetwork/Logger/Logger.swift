@@ -5,7 +5,6 @@
 //  Created by mac on 09.10.2020.
 // 
 import Foundation
-//import Sentry
 
 open class Logger {
     open class func verbose(_ message: @autoclosure () -> Any, _
@@ -14,7 +13,6 @@ open class Logger {
                             line: Int = #line,
                             context: Any? = nil) {
         if let message = message() as? String {
-           // SentrySDK.capture(message: message)
             print(message)
         }
 
@@ -27,7 +25,6 @@ open class Logger {
                           line: Int = #line,
                           context: Any? = nil) {
         if let message = message() as? String {
-            //SentrySDK.capture(message: message)
             print(message)
         }
         if let message = message() as? Data {
@@ -46,7 +43,6 @@ open class Logger {
                          line: Int = #line,
                          context: Any? = nil) {
         if let message = message() as? String {
-            //SentrySDK.capture(message: message)
             print(message)
         }
 
@@ -59,7 +55,6 @@ open class Logger {
                             line: Int = #line,
                             context: Any? = nil) {
         if let message = message() as? String {
-            //SentrySDK.capture(message: message)
             print(message)
         }
 
@@ -72,7 +67,6 @@ open class Logger {
                           line: Int = #line,
                           context: Any? = nil) {
         if let message = message() as? String {
-          //  SentrySDK.capture(message: message)
             print(message)
         }
         

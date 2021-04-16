@@ -71,7 +71,6 @@ private extension ParserNetworkData {
     func printWarningJSON(data: Data?, error: Error?, code: Int = 0) {
         let data = String(data: data ?? Data(), encoding: String.Encoding.utf8) ?? ""
         let debugError = "Data: \(data) \n Error: \(String(describing: error?.localizedDescription)) \n Code: \(code)"
-        //SentrySDK.capture(message: debugError)
         Logger.error(debugError)
     }
 
